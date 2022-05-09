@@ -22,6 +22,8 @@ public class SignUp implements ActionListener {
     private static  JLabel success;
 
 
+
+
     SignUp(){
         JPanel panel = new JPanel();
         JFrame app = new JFrame("SIGN UP");

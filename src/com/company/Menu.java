@@ -9,6 +9,7 @@ import java.awt.event.ActionListener;
 public class Menu {
     JFrame app = new JFrame();
     JPanel panel = new JPanel();
+    JPanel getPanel
 
     Menu(){
         Border border = BorderFactory.createLineBorder(Color.CYAN);
@@ -39,7 +40,7 @@ public class Menu {
 
         JButton paymentButton= new JButton();
         paymentButton.setBounds(600,270,250,50);
-        paymentButton.setText("PAYMENT");
+        paymentButton.setText("Payment");
        // paymentButton.addActionListener(this);
         paymentButton.setFocusable(true);
         paymentButton.setVisible(true);
