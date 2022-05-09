@@ -9,9 +9,8 @@ import java.awt.event.ActionListener;
 public class Menu {
     JFrame app = new JFrame();
     JPanel panel = new JPanel();
-    JPanel getPanel = new JPanel();
-    ff
-            ldkfd;fk
+   
+
     
 
     Menu(){
