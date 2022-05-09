@@ -11,6 +11,8 @@ public class Menu {
     JPanel panel = new JPanel();
     JPanel getPanel = new JPanel();
     ff
+            ldkfd;fk
+    
 
     Menu(){
         Border border = BorderFactory.createLineBorder(Color.CYAN);
