@@ -9,7 +9,7 @@ import java.awt.event.ActionListener;
 public class Menu {
     JFrame app = new JFrame();
     JPanel panel = new JPanel();
-    JPanel getPanel
+    JPanel getPanel = new JPanel();
 
     Menu(){
         Border border = BorderFactory.createLineBorder(Color.CYAN);
