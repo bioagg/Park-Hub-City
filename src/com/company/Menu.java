@@ -10,6 +10,7 @@ public class Menu {
     JFrame app = new JFrame();
     JPanel panel = new JPanel();
     JPanel getPanel = new JPanel();
+    ff
 
     Menu(){
         Border border = BorderFactory.createLineBorder(Color.CYAN);
