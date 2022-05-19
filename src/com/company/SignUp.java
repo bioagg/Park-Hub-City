@@ -1,8 +1,12 @@
 package com.company;
 
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
 
 public class SignUp implements ActionListener {
 
@@ -24,7 +28,9 @@ public class SignUp implements ActionListener {
 
 
 
+
     SignUp(){
+
         JPanel panel = new JPanel();
         JFrame app = new JFrame("SIGN UP");
         app.setSize(500,500);
@@ -89,7 +95,33 @@ public class SignUp implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        String user = userText.getText();
+       /* try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+        } catch (ClassNotFoundException ex) {
+            ex.printStackTrace();
+        }
+        String url = "jdbc:mysql://localhost:3306/xamppconn?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
+        String user = "root";
+        String pass= "";
+        Connection con = null;
+        try {
+            String sql = "INSERT INTO 'user' " +
+                    "VALUES (? , ? ,? ,? )";
+            con = DriverManager.getConnection(url , user , pass);
+           var pst = con.prepareStatement(sql);
+
+            pst.setInt(1, intID.getText());
+
+
+
+           pst.executeUpdate();
+        }
+
+        catch (SQLException ex) {
+            ex.printStackTrace();
+        }
+
+        /*String user = userText.getText();
         String password = passwordText.getText();
         String name = nameText.getText();
         String surname = surnameText.getText();
@@ -97,6 +129,16 @@ public class SignUp implements ActionListener {
 
         System.out.println(name + "," + surname + "," + user + ", " + password + "," + vehicle);
         Menu  menu = new Menu();
+        */
+
+
+
+
+
+
+
+
+
         app.setVisible(true);
 
 

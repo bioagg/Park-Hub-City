@@ -6,6 +6,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.HashMap;
+import java.sql.*;
 
 //h klasi auti einai otan patame login h sign in na emfanizetai ena deutero parathiro to opoio na mporoume
 //na eisagoume to username kai password
@@ -68,14 +69,14 @@ public class Login implements  ActionListener{
 
 
     }
-
+//error dioti thelw na min orizw egw ws sustima to username kai to password
     @Override
     public void actionPerformed(ActionEvent e) {
-        String user = userText.getText();
+        String username = userText.getText();
         String password = passwordText.getText();
-        System.out.println(user + "," + password);
+        System.out.println(username + "," + password);
 
-        if(user.equals("Minas") && password.equals("minas123")){
+        if(username.equals(user.username) && password.equals(user.password)){
             success.setText("Login Succesfully!");
          }
 
