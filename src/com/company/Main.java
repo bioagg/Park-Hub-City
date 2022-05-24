@@ -11,19 +11,13 @@ public abstract class Main {
     public static void main(String[] args) throws SQLException, ClassNotFoundException {
 
 
-       AppUI appUI = new AppUI();
+        AppUI appUI = new AppUI();
 
 
 
 
-
-
-
-
-
-
-       //connect java with our database
-        try
+        //connect java with our database
+      /*  try
         {
             Class.forName("com.mysql.cj.jdbc.Driver");
             String url = "jdbc:mysql://localhost:3306/parkhubcity?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
@@ -51,7 +45,7 @@ public abstract class Main {
 
             statement.executeUpdate(sql);
             System.out.println("Inserted data on our database");
-*/
+
 
             while(r.next())
             {
@@ -87,5 +81,6 @@ public abstract class Main {
 
 
 
-    public abstract void actionPerformed(ActionEvent arg0, ActionEvent arg1);{}
+    public abstract void actionPerformed(ActionEvent arg0, ActionEvent arg1);{} */
+    }
 }

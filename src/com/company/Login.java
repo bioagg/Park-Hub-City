@@ -72,22 +72,16 @@ public class Login implements  ActionListener{
 //error dioti thelw na min orizw egw ws sustima to username kai to password
     @Override
     public void actionPerformed(ActionEvent e) {
-        String username = userText.getText();
-        String password = passwordText.getText();
-        System.out.println(username + "," + password);
-
-        if(username.equals(user.username) && password.equals(user.password)){
-            success.setText("Login Succesfully!");
-         }
-
-
         Menu  menu = new Menu();
         app.setVisible(true);
+        //create_user();
 
 
 
     }
 
+    //private void create_user() {
+   // }
 
 
 }
