@@ -72,7 +72,7 @@ public class Login implements  ActionListener{
 //error dioti thelw na min orizw egw ws sustima to username kai to password
     @Override
     public void actionPerformed(ActionEvent e) {
-        Menu  menu = new Menu();
+        UserDesire userDesire = new UserDesire();
         app.setVisible(true);
         //create_user();
 
