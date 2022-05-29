@@ -7,7 +7,7 @@ import java.awt.event.ActionListener;
 import java.sql.*;
 
 
-public class SignIn extends Component implements ActionListener {
+public class SignUp extends Component implements ActionListener {
 
 
     private static JLabel idLabel;
@@ -29,7 +29,7 @@ public class SignIn extends Component implements ActionListener {
     private static JLabel success;
 
 
-    SignIn() {
+    SignUp() {
 
         JPanel panel = new JPanel();
         JFrame app = new JFrame("SIGN UP");
@@ -73,33 +73,33 @@ public class SignIn extends Component implements ActionListener {
         panel.add(userText);
 
         emailLabel = new JLabel("EMAIL");
-        emailLabel.setBounds(50, 110, 80, 25);
+        emailLabel.setBounds(50, 140, 80, 25);
         panel.add(emailLabel);
 
         emailText = new JTextField();
-        emailText.setBounds(100, 110, 80, 25);
+        emailText.setBounds(100, 140, 80, 25);
         panel.add(emailText);
 
 
         passwordLabel = new JLabel("Password");
-        passwordLabel.setBounds(50, 140, 80, 25);
+        passwordLabel.setBounds(50, 170, 80, 25);
         panel.add(passwordLabel);
 
         passwordText = new JPasswordField();
-        passwordText.setBounds(120, 140, 80, 25);
+        passwordText.setBounds(100, 170, 80, 25);
         panel.add(passwordText);
 
         vehicleLabel = new JLabel("Vehicle");
-        vehicleLabel.setBounds(50, 170, 80, 25);
+        vehicleLabel.setBounds(50, 200, 80, 25);
         panel.add(vehicleLabel);
 
         vehicleText = new JTextField();
-        vehicleText.setBounds(100, 170, 80, 25);
+        vehicleText.setBounds(100, 200, 80, 25);
         panel.add(vehicleText);
 
 
         submitButton = new JButton("SIGN UP");
-        submitButton.setBounds(50, 190, 80, 25);
+        submitButton.setBounds(50, 220, 80, 25);
         submitButton.addActionListener(this);
         panel.add(submitButton);
 
