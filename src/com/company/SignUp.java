@@ -114,42 +114,8 @@ public class SignUp extends Component implements ActionListener {
 
 
         create_user();
-       /* try {
-            Class.forName("com.mysql.cj.jdbc.Driver");
-        } catch (ClassNotFoundException ex) {
-            ex.printStackTrace();
-        }
-        String url = "jdbc:mysql://localhost:3306/xamppconn?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
-        String user = "root";
-        String pass= "";
-        Connection con = null;
-        try {
-            String sql = "INSERT INTO 'user' " +
-                    "VALUES (? , ? ,? ,? )";
-            con = DriverManager.getConnection(url , user , pass);
-           var pst = con.prepareStatement(sql);
-
-            pst.setInt(1, intID.getText());
-
-
-
-           pst.executeUpdate();
-        }
-
-        catch (SQLException ex) {
-            ex.printStackTrace();
-        }
-
-        /*String user = userText.getText();
-        String password = passwordText.getText();
-        String name = nameText.getText();
-        String surname = surnameText.getText();
-        String vehicle = vehicleText.getText();
-
-        System.out.println(name + "," + surname + "," + user + ", " + password + "," + vehicle);
-
-        */
-           UserDesire usrdesire = new UserDesire();
+        //MainScreen mainScreen = new MainScreen();
+        Parking parking = new Parking();
 
         app.setVisible(true);
 
@@ -233,7 +199,7 @@ public class SignUp extends Component implements ActionListener {
             int addedRows = preparedStatement.executeUpdate();
             if (addedRows > 0) {
                 user = new User();
-                user.id = Integer.parseInt(id);
+                user.id = id;
                 user.name = name;
                 user.surname = surname;
                 user.username = username;

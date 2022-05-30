@@ -68,7 +68,7 @@ public class LogIn implements  ActionListener{
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        UserDesire userDesire = new UserDesire();
+        MainScreen mainscrn = new MainScreen();
         app.dispose();
         //create_user();
 

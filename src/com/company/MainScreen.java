@@ -40,7 +40,7 @@ public class MainScreen {
 
         JButton paymentButton= new JButton();
         paymentButton.setBounds(600,270,250,50);
-        paymentButton.setText("Payment");
+        paymentButton.setText("SELECT PARKING");
        // paymentButton.addActionListener(this);
         paymentButton.setFocusable(true);
         paymentButton.setVisible(true);
