@@ -1,17 +1,13 @@
 package com.company;
 
 import javax.swing.*;
-import javax.swing.border.Border;
-import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.HashMap;
-import java.sql.*;
 
 //h klasi auti einai otan patame login h sign in na emfanizetai ena deutero parathiro to opoio na mporoume
 //na eisagoume to username kai password
 
-public class Login implements  ActionListener{
+public class LogIn implements  ActionListener{
     //knoume tin parkatw anathesi wste na mporoume na xrisimopoioume tis metavlites kai se alles methodous
 
     private static JLabel userLabel;
@@ -27,7 +23,7 @@ public class Login implements  ActionListener{
 
 
 
-    Login(){
+    LogIn(){
         JPanel panel = new JPanel();
         JFrame app = new JFrame("LOGIN");
         app.setSize(500,500);
@@ -69,25 +65,19 @@ public class Login implements  ActionListener{
 
 
     }
-//error dioti thelw na min orizw egw ws sustima to username kai to password
+
     @Override
     public void actionPerformed(ActionEvent e) {
-        String username = userText.getText();
-        String password = passwordText.getText();
-        System.out.println(username + "," + password);
-
-        if(username.equals(user.username) && password.equals(user.password)){
-            success.setText("Login Succesfully!");
-         }
-
-
-        Menu  menu = new Menu();
-        app.setVisible(true);
+        MainScreen mainscrn = new MainScreen();
+        app.dispose();
+        //create_user();
 
 
 
     }
 
+    //private void create_user() {
+   // }
 
 
 }

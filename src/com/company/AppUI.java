@@ -83,7 +83,7 @@ public class AppUI  implements ActionListener {
         if (e.getSource() == Appbutton1) {
             app.setVisible(true);
             app.dispose();
-            Login login = new Login();
+            LogIn login = new LogIn();
 
         }
         if(e.getSource() ==Appbutton2){

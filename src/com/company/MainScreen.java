@@ -3,17 +3,15 @@ package com.company;
 import javax.swing.*;
 import javax.swing.border.Border;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
-public class Menu {
+public class MainScreen {
     JFrame app = new JFrame();
     JPanel panel = new JPanel();
 
 
     
 
-    Menu(){
+    MainScreen(){
         Border border = BorderFactory.createLineBorder(Color.CYAN);
         JLabel AppLabel = new JLabel();
         AppLabel.setText("WELCOME TO OUR MENU");
@@ -42,7 +40,7 @@ public class Menu {
 
         JButton paymentButton= new JButton();
         paymentButton.setBounds(600,270,250,50);
-        paymentButton.setText("Payment");
+        paymentButton.setText("SELECT PARKING");
        // paymentButton.addActionListener(this);
         paymentButton.setFocusable(true);
         paymentButton.setVisible(true);
@@ -94,7 +92,7 @@ public class Menu {
         
         
 
-        app.setTitle("MENU"); //name of our this
+        app.setTitle("MAIN SCREEN");
         app.setSize(420, 420);
         app.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         app.setResizable(true);
