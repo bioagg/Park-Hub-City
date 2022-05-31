@@ -117,7 +117,8 @@ public class SignUp extends Component implements ActionListener {
         //MainScreen mainScreen = new MainScreen();
         Parking parking = new Parking();
 
-        app.setVisible(true);
+
+
 
 
     }
