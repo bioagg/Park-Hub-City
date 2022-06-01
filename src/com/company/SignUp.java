@@ -115,7 +115,7 @@ public class SignUp extends Component implements ActionListener {
 
         create_user();
         //MainScreen mainScreen = new MainScreen();
-        Parking parking = new Parking();
+
 
 
 
